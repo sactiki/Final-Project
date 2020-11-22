@@ -1,0 +1,19 @@
+body{
+    text-align: center
+}
+
+td{
+    border: 2px solid black
+}
+.overallhidden{
+    display:none;
+}
+.americanhidden{
+    display:none;  
+}
+.aussiehidden{
+    display:none;
+}
+.finalhidden{
+    display:none;
+}

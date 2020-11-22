@@ -1,18 +1,50 @@
 <html>
 <head>
     <title>Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard.css">
     </head>
 
 <body>
-   <h1>Tables of CO<sub>2</sub> Emissions and Levels</h1>
-    <svg ID="US">
+    <h1>Different Graphs</h1>
+    <h2>Blue will Represent Temperature Anomalies, while red will represent Carbon Data</h2>
+    <h3>Please choose Overall button first</h3>
     
-    </svg>
+    <table >
+        <tr>
+            <td id="usbutton">United States Data</td>
+            <td id="abutton">Australian Data</td>
+            <td id="bothbutton">Both U.S. and Australian Data</td>
+            <td id="overallbutton">Overall Data</td>
+        </tr>
+    </table>
+    <div id="overalldata" class="overallhidden">
+    <h3>Overall Trends</h3>
+    <svg ID="overall"></svg>
+        <p>This is the overall data averaged from multiple centers around the world, measuring CO<sub>2</sub> levels in parts per million as well as the anomaly in the temperature variations per year. While it may show a correlation, it is best to see if the trend is the same around the world to confirm. Explore American and Australian data to find out more.  </p>
+    </div>
+    
+    <div id="americandata" class="americanhidden">
+   <h3>United States Data</h3>
+    <svg ID="US"> </svg>
+    </div>
+    
+    <div id="aussiedata" class="aussiehidden">
+    <h3>Australian Data</h3>
+    <svg ID="aussie"></svg>
+    </div>
+    
+    <div id="finaldata" class="finalhidden">
+        <p>As we can see the data seems to support the previous trend found, which is that with rising CO<sub>2</sub> levels there has been an apparent rise in temperature in a period of 50 years. Yet Australia, an island nation, seems to be less affected by having their temperature rise slowlier. Therefore my hypothesis is that the United States may have such a high rise in temperature due to its surrounding countries, being Mexico and Canada, as Australia has had a slower rise in temperature even though American CO<sub>2</sub> emissions have lowered recently.</p>
+    </div>
+    
     <script src="https://d3js.org/d3.v5.min.js"></script>
-    <script src="js/US.js"></script>   
+    <script src="js/US.js"></script>  
+    <script src="js/overall.js"></script>
+    <script src="js/aussie.js"></script>
+    <script src="js/hidingstuff.js"></script>
     
-    
-    <p>This page is supposed to show a few charts, which when looked at together should show changes in temperature in two countries, the United States with a high rate of carbon emissions as well as those of Antigua and Barbuda. Antigua and Barbuda is located in the Carribean, and has a low carbon emission output. Visitors will be able to toggle through a combination of the graphs, as well as a representation of the world wide graph of average CO<sub>2</sub> levels and temperatures. (data for US imported but still attempting to draw a proper line graph)</p>
+    <a href="index.html">Homepage</a>
+   
     
     
     
