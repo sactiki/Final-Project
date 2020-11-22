@@ -165,8 +165,8 @@ d3.select("#US")
 
 //calling up data
 
-var ustemppromise= d3.csv("../data/annual_ustemp.csv");
-var uscarbonpromise=d3.csv("../data/fixeddata.csv")
+var ustemppromise= d3.csv("data/annual_ustemp.csv");
+var uscarbonpromise=d3.csv("data/fixeddata.csv")
 
 var successFCN=function(promise){
   // console.log("Data collected", promise)

@@ -151,8 +151,8 @@ d3.select("#overall")
 
 
 //Setting up promises
-var gltemppromise=d3.csv("../data/gl_temp_data.csv");
-var glcarbonpromise=d3.csv("../data/co2-annmean-gl_csv.csv")
+var gltemppromise=d3.csv("data/gl_temp_data.csv");
+var glcarbonpromise=d3.csv("data/co2-annmean-gl_csv.csv")
 var successFCN1=function(promise){
     console.log("global data collected", promise)
     initgraph1(promise);

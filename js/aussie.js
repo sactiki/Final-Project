@@ -143,8 +143,8 @@ d3.select("#aussie")
 
 
 //Promises
-var aussietemppromise=d3.csv("../data/aussietemp.csv")
-var aussiecarbpromise=d3.csv("../data/aussiecarbondata.csv")
+var aussietemppromise=d3.csv("data/aussietemp.csv")
+var aussiecarbpromise=d3.csv("data/aussiecarbondata.csv")
 var successFCN2=function(promise){
     console.log("yay aussies", promise)
     initgraph2(promise)
